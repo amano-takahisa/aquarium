@@ -1,0 +1,4 @@
+mkdocs
+rasterio
+geopandas
+matplotlib
