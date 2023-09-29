@@ -2,3 +2,8 @@ mkdocs
 rasterio
 geopandas
 matplotlib
+mkdocs-gallery
+mkdocs-material
+pymdown-extensions
+GDAL
+pre-commit

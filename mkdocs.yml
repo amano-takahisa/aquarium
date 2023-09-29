@@ -1,5 +1,40 @@
 site_name: Aquarium
-site_url: https://example.com/
+site_url: https://amano-takahisa.github.io/aquarium/
+repo_url: https://github.com/amano-takahisa/aquarium
+repo_name: GitHub
+site_author: Takahisa Amano
+
+# validation:
+#   omitted_files: warn
+#   absolute_links: warn
+#   unrecognized_links: warn
+
 nav:
   - Home: index.md
-theme: readthedocs
+  - Raster Data:
+    - get_raster_metadata.md
+  - generated/gallery
+
+
+theme:
+  name: material
+  features:
+    - content.code.copy
+    - navigation.indexes
+
+markdown_extensions:
+  - pymdownx.highlight:
+      linenums: true
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets:
+      base_path: ['docs/snippets/']
+      dedent_subsections: true
+
+plugins:
+  - gallery:
+      examples_dirs: docs/examples
+      gallery_dirs: docs/generated/gallery
